@@ -6,13 +6,44 @@
     android:layout_height="match_parent"
     tools:context=".MainActivity">
 
-    <TextView
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:text="Hello World!"
+    <Button
+        android:id="@+id/askButton"
+        android:layout_width="126dp"
+        android:layout_height="0dp"
+        android:layout_marginBottom="49dp"
+        android:text="Ask!"
+        android:textSize="21sp"
+        android:textStyle="bold"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toTopOf="parent" />
+        app:layout_constraintTop_toBottomOf="@+id/textView" />
+
+    <TextView
+        android:id="@+id/textView"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="16dp"
+        android:layout_marginTop="134dp"
+        android:layout_marginBottom="369dp"
+        android:fontFamily="sans-serif-condensed-medium"
+        android:text="Need help with decisions? Ask the Magic 8 Ball!"
+        android:textAlignment="center"
+        android:textColor="#FF9800"
+        android:textSize="34sp"
+        app:layout_constraintBottom_toTopOf="@+id/askButton"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        tools:textStyle="bold" />
+
+    <ImageView
+        android:id="@+id/imageView"
+        android:layout_width="353dp"
+        android:layout_height="392dp"
+        android:layout_marginStart="40dp"
+        android:layout_marginBottom="344dp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:srcCompat="@drawable/blankball" />
 
 </androidx.constraintlayout.widget.ConstraintLayout>
