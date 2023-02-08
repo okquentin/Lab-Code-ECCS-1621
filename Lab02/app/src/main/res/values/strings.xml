@@ -1,0 +1,8 @@
+<resources>
+    <string name="app_name">Lab 02</string>
+    <string name="Square">Square</string>
+    <string name="Round">Round</string>
+    <string name="Large">Large - 12 inches</string>
+    <string name="Medium">Medium - 10 inches</string>
+    <string name="Small">Small - 8 inches</string>
+</resources>

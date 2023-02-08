@@ -1,0 +1,28 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<classpath>
+	<classpathentry kind="con" path="org.eclipse.jdt.launching.JRE_CONTAINER"/>
+	<classpathentry kind="src" path="Lab01/app/build/generated/source/buildConfig/debug"/>
+	<classpathentry kind="src" path="Lab01/app/src/androidTest/java"/>
+	<classpathentry kind="src" path="Lab01/app/src/main/java"/>
+	<classpathentry kind="src" path="Lab01/app/src/test/java"/>
+	<classpathentry kind="src" path="Lab02/app/build/generated/source/buildConfig/debug"/>
+	<classpathentry kind="src" path="Lab02/app/src/androidTest/java"/>
+	<classpathentry kind="src" path="Lab02/app/src/main/java"/>
+	<classpathentry kind="src" path="Lab02/app/src/test/java"/>
+	<classpathentry kind="lib" path="Lab01/app/build/intermediates/compile_and_runtime_not_namespaced_r_class_jar/debug/R 2.jar"/>
+	<classpathentry kind="lib" path="Lab01/app/build/intermediates/compile_and_runtime_not_namespaced_r_class_jar/debug/R.jar"/>
+	<classpathentry kind="lib" path="Lab01/app/build/intermediates/merged_java_res/debug/base.jar"/>
+	<classpathentry kind="lib" path="Lab01/app/build/intermediates/project_dex_archive/debug/out/9b484fff2a4a2806886f30700334ffb7b3032164b9b6aeab8cb3973df8da9c65_0.jar"/>
+	<classpathentry kind="lib" path="Lab01/app/build/intermediates/project_dex_archive/debug/out/9b484fff2a4a2806886f30700334ffb7b3032164b9b6aeab8cb3973df8da9c65_1.jar"/>
+	<classpathentry kind="lib" path="Lab01/app/build/intermediates/project_dex_archive/debug/out/9b484fff2a4a2806886f30700334ffb7b3032164b9b6aeab8cb3973df8da9c65_2.jar"/>
+	<classpathentry kind="lib" path="Lab01/app/build/intermediates/project_dex_archive/debug/out/9b484fff2a4a2806886f30700334ffb7b3032164b9b6aeab8cb3973df8da9c65_3.jar"/>
+	<classpathentry kind="lib" path="Lab01/gradle/wrapper/gradle-wrapper.jar"/>
+	<classpathentry kind="lib" path="Lab02/app/build/intermediates/compile_and_runtime_not_namespaced_r_class_jar/debug/R.jar"/>
+	<classpathentry kind="lib" path="Lab02/app/build/intermediates/merged_java_res/debug/base.jar"/>
+	<classpathentry kind="lib" path="Lab02/app/build/intermediates/project_dex_archive/debug/out/6d1c70c9418f0fc763f4e8fce21ed2f8ca6c37bdd13e0a5be8afefa1c3d08271_0.jar"/>
+	<classpathentry kind="lib" path="Lab02/app/build/intermediates/project_dex_archive/debug/out/6d1c70c9418f0fc763f4e8fce21ed2f8ca6c37bdd13e0a5be8afefa1c3d08271_1.jar"/>
+	<classpathentry kind="lib" path="Lab02/app/build/intermediates/project_dex_archive/debug/out/6d1c70c9418f0fc763f4e8fce21ed2f8ca6c37bdd13e0a5be8afefa1c3d08271_2.jar"/>
+	<classpathentry kind="lib" path="Lab02/app/build/intermediates/project_dex_archive/debug/out/6d1c70c9418f0fc763f4e8fce21ed2f8ca6c37bdd13e0a5be8afefa1c3d08271_3.jar"/>
+	<classpathentry kind="lib" path="Lab02/gradle/wrapper/gradle-wrapper.jar"/>
+	<classpathentry kind="output" path="Lab01/app/build/intermediates/javac/debug/classes"/>
+</classpath>

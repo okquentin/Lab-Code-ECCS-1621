@@ -1,0 +1,120 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".MainActivity">
+
+    <TextView
+        android:id="@+id/programName"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="70dp"
+        android:text="Best Pizza Buy Calculator!"
+        android:textAlignment="center"
+        android:textColor="@android:color/holo_red_dark"
+        android:textSize="35dp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <TextView
+        android:id="@+id/textPizza1"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="20dp"
+        android:layout_marginTop="86dp"
+        android:text="Pizza Size and Shape"
+        android:textSize="18dp"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/programName" />
+
+    <TextView
+        android:id="@+id/textView2"
+        android:layout_width="86dp"
+        android:layout_height="353dp"
+        android:layout_marginStart="28dp"
+        android:layout_marginTop="93dp"
+        app:layout_constraintStart_toEndOf="@+id/checkbox_square"
+        app:layout_constraintTop_toBottomOf="@+id/programName" />
+
+    <Button
+        android:id="@+id/buttonNext"
+        android:layout_width="250dp"
+        android:layout_height="60dp"
+        android:layout_marginStart="74dp"
+        android:layout_marginTop="46dp"
+        android:text="CALC PRICE PER INCH"
+        android:textSize="18dp"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/textView2" />
+
+    <RadioGroup
+        android:id="@+id/radioGroup"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <RadioButton
+        android:id="@+id/radio_small"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="16dp"
+        android:layout_marginTop="24dp"
+        android:onClick="onRadioButtonClicked"
+        android:text="@string/Small"
+        android:textSize="20dp"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/textPizza1" />
+
+    <RadioButton
+        android:id="@+id/radio_medium"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="16dp"
+        android:layout_marginTop="15dp"
+        android:onClick="onRadioButtonClicked"
+        android:text="@string/Medium"
+        android:textSize="20dp"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/radio_small" />
+
+    <RadioButton
+        android:id="@+id/radio_large"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="16dp"
+        android:layout_marginTop="15dp"
+        android:onClick="onRadioButtonClicked"
+        android:text="@string/Large"
+        android:textSize="20dp"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/radio_medium" />
+
+    <CheckBox
+        android:id="@+id/checkbox_square"
+        android:layout_width="80dp"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="71dp"
+        android:layout_marginTop="91dp"
+        android:onClick="onCheckboxClicked"
+        android:text="@string/Square"
+        app:layout_constraintStart_toEndOf="@+id/checkbox_round"
+        app:layout_constraintTop_toBottomOf="@+id/radio_large" />
+
+    <CheckBox
+        android:id="@+id/checkbox_round"
+        android:layout_width="80dp"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="20dp"
+        android:layout_marginTop="91dp"
+        android:onClick="onCheckboxClicked"
+        android:text="@string/Round"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/radio_large" />
+
+
+</androidx.constraintlayout.widget.ConstraintLayout>
