@@ -18,7 +18,7 @@ public class RandomMooValue {
     }
 
     public boolean setSecretValue(String n){
-        if(n.length() > 4){return false;}
+        if(n.length() != 4){return false;}
 
         else {
             secretVal = Integer.parseInt(n);
@@ -34,12 +34,12 @@ public class RandomMooValue {
 
     public int getBigMooCount(String guess){
         int MOO = 0;
+
         String n = getSecretValue();
 
         for(int i = 0; i < 4; i++){
             if(guess.charAt(i) ==  n.charAt(i)){MOO++;}
         }
-
         return MOO;
     }
 
@@ -48,13 +48,13 @@ public class RandomMooValue {
         String n = getSecretValue();
 
         for(int i = 0; i < 4; i++){
-            if(guess.charAt(0) ==  n.charAt(i)){moo++;}
-            if(guess.charAt(1) ==  n.charAt(i)){moo++;}
-            if(guess.charAt(2) ==  n.charAt(i)){moo++;}
-            if(guess.charAt(3) ==  n.charAt(i)){moo++;}
-            if(guess.charAt(i) ==  n.charAt(i)){moo--;}
+            if(guess.charAt(i) ==  n.charAt(i)){moo--; continue;}
+            if(guess.charAt(0) ==  n.charAt(i)){moo++; continue;}
+            if(guess.charAt(1) ==  n.charAt(i)){moo++; continue;}
+            if(guess.charAt(2) ==  n.charAt(i)){moo++; continue;}
+            if(guess.charAt(3) ==  n.charAt(i)){moo++; continue;}
         }
-
+        if(moo < 0){moo = 0;}
         return moo;
     }
 
