@@ -18,7 +18,7 @@ public class RandomMooValue {
     }
 
     public boolean setSecretValue(String n){
-        if(n.length() != 4){return false;}
+        if(n.length() > 4){return false;}
 
         else {
             secretVal = Integer.parseInt(n);
@@ -28,7 +28,7 @@ public class RandomMooValue {
 
     public String getSecretValue(){
         String n = "" + secretVal;
-        while(n.length()<4) {n = '0'+n;}
+        while(n.length() < 4) {n = '0'+n;}
         return n;
     }
 

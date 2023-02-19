@@ -42,12 +42,10 @@ public class MainActivity extends AppCompatActivity {
             final String[] secretVal = {""};
             final boolean[] validValue = {false};
 
-            // Method call to set secret value, with check to make sure value is valid
-            validValue[0] = rmv.setSecretValue(secretValue.getText().toString());
-            if(!validValue[0]){
-                secretVal[0] = rmv.getSecretValue();
-                secretValue.setText(secretVal[0]);
-            }
+            // Method call to set secret value
+            rmv.setSecretValue(secretValue.getText().toString());
+            secretVal[0] = rmv.getSecretValue();
+            secretValue.setText(secretVal[0]);
 
             // Check to make sure player inputs a 4 character guess
             String playerGuess = guessValue.getText().toString();
