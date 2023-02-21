@@ -56,6 +56,11 @@ public class MainActivity extends AppCompatActivity {
             int moo = rmv.getLittleMooCount(guessValue.getText().toString());
             String MOOString = "" + MOO;
             String mooString = "" + moo;
+
+            for(int i = 0; i < moo; i++){
+                createViewItem(new String[]{"Fabio", "Santos", "Programador", "Natal"});
+
+            }
             bigCount.setText(MOOString);
             littleCount.setText(mooString);
 

@@ -48,11 +48,12 @@ public class RandomMooValue {
         String n = getSecretValue();
 
         for(int i = 0; i < 4; i++){
-            if(guess.charAt(i) ==  n.charAt(i)){moo--; continue;}
+            if(guess.charAt(i) ==  n.charAt(i)){moo--; if(moo<1){moo++;} continue;}
             if(guess.charAt(0) ==  n.charAt(i)){moo++; continue;}
             if(guess.charAt(1) ==  n.charAt(i)){moo++; continue;}
             if(guess.charAt(2) ==  n.charAt(i)){moo++; continue;}
             if(guess.charAt(3) ==  n.charAt(i)){moo++; continue;}
+            if(moo < 0){moo ++;}
         }
         if(moo < 0){moo = 0;}
         return moo;
